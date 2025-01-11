@@ -1,3 +1,5 @@
-<div>
-    <!-- He who is contented is rich. - Laozi -->
-</div>
+@extends('layouts.app')
+
+@section('content')
+    
+@endsection

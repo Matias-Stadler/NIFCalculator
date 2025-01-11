@@ -8,6 +8,14 @@ use Illuminate\Http\Request;
 class LetterController extends Controller
 {
     //
+    public function index()
+    {
+        //
+        $letters = Letter::get();
+
+        return view('home', compact('letters'));
+    }
+
     function assignLetterToNumber($numChain)
 {
     if (strlen($numChain) != 8) {
